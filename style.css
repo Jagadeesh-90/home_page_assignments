@@ -1,4 +1,4 @@
-.home {
+.home ,.contect,.back{
    background-image: url("./images/backimage.jfif");
     background-size: cover;
    
@@ -45,10 +45,10 @@ nav ul li a:hover{
     text-align: center;
     color:rgb(43, 226, 52)
 }
-.back{
+/* .back{
     background-image: url("./images/backimage.jfif");
     background-size:cover;
-} 
+}  */
 .details{
     
     font-size: 25px;
@@ -89,12 +89,12 @@ nav ul li a:hover{
     text-decoration:none;
     color:aliceblue;
 }
-.contect{
+/* .contect{
     
     background-image: url("./images/backimage.jfif");
     background-size:cover
 
-}
+} */
 h3{
     color:aliceblue;
 }
@@ -117,4 +117,73 @@ h3{
 .imgs{
     height:300px;
     width:300px;
+}
+
+@media screen and (max-width: 950px)
+{
+    .details{    
+    margin-left: 100px;
+    margin-right: 100px;
+    }
+}
+@media screen and (max-width: 550px){
+    nav ul li a{
+        /*line-height:100px;*/
+        color:red;
+        padding:2px 5px;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .head{
+        margin-top: 14%
+    }
+    
+}
+@media screen and (max-width: 980px)
+{
+.detail{    
+    margin:0% 15%;
+}
+.title{
+    margin-top: 14%;
+}
+
+}
+
+
+@media screen and (max-width:1180px){
+    .imgs{
+        height:150px;
+        width:150px;
+    }
+    .grid{
+        margin-top:10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 15px;
+        row-gap: 15px;
+        width:500px;
+        height:500px;
+        justify-content: center;
+        margin-left:17%;
+    }
+}
+
+@media screen and (max-width:650px){
+    .imgs{
+        height:100px;
+        width:100px;
+    }
+    .grid{
+        margin-top:10px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        width:400px;
+        height:400px;
+        justify-content: center;
+        margin-left:10%;
+    }
 }
